@@ -10,7 +10,8 @@ import { Toaster } from "./components/ui/sonner"; // Toaster notification compon
 import { GoogleOAuthProvider } from "@react-oauth/google"; // For Google OAuth integration
 import { DialogProvider } from "./components/ui/custom/DailogContext"; // Context provider for managing dialogs in the app
 import Viewtrip from "./view-trip/[tripId]/ViewTrip"; // Viewtrip component to display trip details based on tripId
-import MyTrips from "./my-trips/myTrips";
+// import MyTrips from "./my-trips/myTrips";
+import MyTrips from "./my-trips/MyTrips";
 // Setting up the router for navigation
 
 
