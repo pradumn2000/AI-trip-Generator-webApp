@@ -27,6 +27,14 @@ function Hero() {
           </Button>
         </NavLink>
       </div>
+       {/* Centered Image Only for Desktop */}
+       <div className="hidden lg:flex justify-center mt-10">
+          <img
+            src="./Hero.png"
+            alt="Travel Illustration"
+            className="w-[300px] max-w-full opacity-90"
+          />
+        </div>
     </div>
   );
 }
