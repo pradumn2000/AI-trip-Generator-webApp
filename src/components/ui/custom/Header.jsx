@@ -71,10 +71,10 @@ function Header() {
         {user ? (
           <div className="flex items-center gap-4">
             <a href='/my-trips'>
-            <Button className="text-black rounded-full">My Trips</Button>
+            <Button className="text-white rounded-full">My Trips</Button>
             </a>
             <a href='/createTrip'>
-            <Button className="text-black rounded-full">+Create Trip</Button>
+            <Button className="text-white rounded-full">+Create Trip</Button>
             </a>
             <Popover>
   <PopoverTrigger> <img
@@ -105,7 +105,7 @@ function Header() {
             <p>Sign in to the App with google Authentication securely</p>
             <Button
               onClick={login}
-              className="w-full mt-5 flex gap-4 items-center text-black shadow-black"
+              className="w-full mt-5 flex gap-4 items-center text-white shadow-black"
             >
               <FcGoogle className="h-7 w-7" />
               Sign In With Google
