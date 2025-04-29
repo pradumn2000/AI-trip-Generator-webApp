@@ -263,7 +263,7 @@ function CreateTrip() {
             <p>Sign in to the App with Google Authentication securely</p>
             <Button
               onClick={login}
-              className="w-full mt-5 flex gap-4 items-center text-white
+              className="w-full mt-5 flex gap-4 items-center text-black
               shadow-black"
             >
               <FcGoogle className="h-7 w-7" />
