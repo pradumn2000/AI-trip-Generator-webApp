@@ -12,10 +12,6 @@ import { DialogProvider } from "./components/ui/custom/DailogContext"; // Contex
 import Viewtrip from "./view-trip/[tripId]/ViewTrip"; // Viewtrip component to display trip details based on tripId
 // import MyTrips from "./my-trips/myTrips";
 import MyTrips from "./my-trips/MyTrips";
-<<<<<<< HEAD
-=======
-
->>>>>>> c50ab12 (updated vercel json})
 // Setting up the router for navigation
 
 
