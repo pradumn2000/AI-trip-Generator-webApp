@@ -4,6 +4,7 @@ import HotelCardItem from "./HotelCardItem";
 function Hotels({ TripData }) {
   const hotelList =
     TripData?.tripData?.[0]?.travelPlan?.hotelOptions ||
+    TripData?.tripData?.[0]?.TravelPlan?.HotelOptions ||
     TripData?.tripData?.[0]?.travelPlan?.hotels||
     TripData?.tripData?.[0]?.TravelPlan ||
     TripData?.tripData?.[0]?.tripPlan ||

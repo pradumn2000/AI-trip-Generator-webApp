@@ -12,6 +12,7 @@ import { DialogProvider } from "./components/ui/custom/DailogContext"; // Contex
 import Viewtrip from "./view-trip/[tripId]/ViewTrip"; // Viewtrip component to display trip details based on tripId
 // import MyTrips from "./my-trips/myTrips";
 import MyTrips from "./my-trips/MyTrips";
+import SharePage from "./view-trip/[tripId]/components/SharePage";
 // Setting up the router for navigation
 
 
@@ -31,6 +32,14 @@ const router = createBrowserRouter([
   {
     path:'my-trips', // fixed path
     element: <MyTrips/> // fixed component usage
+  },
+    {
+    path: "/share/:tripId",               //  New route
+    element: <SharePage />        // Component to render
+  },
+     {
+    path: "/share/",               //  New route
+    element: <SharePage />        // Component to render
   },
 ]);
 
