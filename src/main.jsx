@@ -13,6 +13,8 @@ import Viewtrip from "./view-trip/[tripId]/ViewTrip"; // Viewtrip component to d
 // import MyTrips from "./my-trips/myTrips";
 import MyTrips from "./my-trips/MyTrips";
 import SharePage from "./view-trip/[tripId]/components/SharePage";
+import Chatbot from "./components/ui/custom/Chatbot";
+import EnhancedTravelChatbot from "./components/ui/custom/Chatbot";
 // Setting up the router for navigation
 
 
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
     path: "/share/",               //  New route
     element: <SharePage />        // Component to render
   },
+  {
+  path: "/support",
+  element: <EnhancedTravelChatbot />
+},
 ]);
 
 // Rendering the app into the DOM

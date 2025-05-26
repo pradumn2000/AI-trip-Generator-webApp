@@ -2,6 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from '../button';
+import EnhancedTravelChatbot from './Chatbot';
 
 function Hero() {
   return (
@@ -36,6 +37,9 @@ function Hero() {
             alt="Travel Illustration"
             className="w-[300px] max-w-full opacity-90"
           />
+        </div>
+        <div>
+          <EnhancedTravelChatbot/>
         </div>
     </div>
   );
