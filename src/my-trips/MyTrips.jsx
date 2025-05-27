@@ -4,10 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from "@/service/firebaseConfig";
 import UserTripCardItem from './components/UserTripCardItem';
+import EnhancedTravelChatbot from '@/components/ui/custom/Chatbot';
+import Footer from '@/view-trip/[tripId]/components/Footer';
 
 function MyTrips() {
     const navigate = useNavigate();
-    const [userTrips, setUserTrips] = useState([]); // ✅ Correct
+    const [userTrips, setUserTrips] = useState([]); 
 
     useEffect(() => {
         GetUserTrips();
@@ -16,7 +18,7 @@ function MyTrips() {
     const GetUserTrips = async () => {
         const user = JSON.parse(localStorage.getItem('user'));
         if (!user) {
-            navigate('/'); // ✅ Redirect if no user
+            navigate('/'); //  Redirect if no user
             return;
         }
 
@@ -29,7 +31,7 @@ function MyTrips() {
             trips.push({id: doc.id,...doc.data() }); // ✅ Collect trips
         });
 
-        setUserTrips(trips); // ✅ Update state
+        setUserTrips(trips); // Update state
     };
 
     return (
@@ -44,8 +46,14 @@ function MyTrips() {
 
                 </div>
             ))}
+
+               
             </div>
+            <EnhancedTravelChatbot/>
+            
+             <Footer/>
         </div>
+        
     );
 }
 

@@ -3,7 +3,7 @@ import { GetPlaceDetails, PHOTO_REF_URL } from '@/service/GlobalApi';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function UserTripCardItem({ TripData }) { // ✅ Correct props
+function UserTripCardItem({ TripData }) { //  Correct props
     const [photoUrl, setPhotoUrl] = useState("");
 
     useEffect(() => {

@@ -27,6 +27,8 @@ import { useDialog } from "./custom/DailogContext";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "@/service/firebaseConfig";
 import { useNavigate } from "react-router-dom";
+import EnhancedTravelChatbot from "./custom/Chatbot";
+import Footer from "@/view-trip/[tripId]/components/Footer";
 
 function CreateTrip() {
   const [place, setPlace] = useState(null);
@@ -201,9 +203,9 @@ function CreateTrip() {
             {SelectBudgetOptions.map((item, index) => (
               <div
                 key={index}
-                className={`p-4 border rounded-lg hover:shadow-lg cursor-pointer bg-white bg-opacity-70 backdrop-blur-sm ${
+                className={`p-4 border rounded-lg hover:bg-red-200 cursor-pointer bg-white bg-opacity-70 backdrop-blur-sm ${
                   formData?.budget === item.title
-                    ? "shadow-lg border-black bg-opacity-90"
+                    ? "shadow-lg border-red-400 bg-opacity-10"
                     : ""
                 }`}
                 onClick={() => handleInputChange("budget", item.title)}
@@ -224,9 +226,9 @@ function CreateTrip() {
             {SelectTravelesList.map((item, index) => (
               <div
                 key={index}
-                className={`p-4 border rounded-lg hover:shadow-lg cursor-pointer bg-white bg-opacity-70 backdrop-blur-sm ${
+                className={`p-4 border rounded-lg hover:bg-red-200 cursor-pointer bg-white bg-opacity-70 backdrop-blur-sm ${
                   formData.travelPartner === item.people
-                    ? "shadow-lg border-black bg-opacity-90"
+                    ? "shadow-lg border-red-400 bg-opacity-10"
                     : ""
                 }`}
                 onClick={() => handleInputChange("travelPartner", item.people)}
@@ -272,6 +274,11 @@ function CreateTrip() {
           </div>
         </DialogContent>
       </Dialog>
+      <div>
+        <EnhancedTravelChatbot/>
+      
+      </div>
+         
     </div>
   );
 }

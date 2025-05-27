@@ -10,7 +10,7 @@ function Hero() {
  
       
      {/* Title Section */}
-<h1 className="text-5xl font-bold text-center text-red-600 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
+<h1 className="text-5xl mt-6 font-bold text-center text-red-600 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
   Discover your Next Adventure with AI:<br/>
   <span className='text-black text-5xl'>personalized itineraries at your fingertips</span> 
 </h1>

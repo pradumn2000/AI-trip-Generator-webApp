@@ -60,7 +60,7 @@ function Header() {
       });
   };
   return (
-    <div className="p-3 shadow-sm flex justify-between items-center px-5 bg-[#ffffff7a] sticky top-0 bg-opacity-70 sm:max-w-full z-50">
+    <div className="p-3 shadow-sm flex justify-between items-center px-5 bg-gradient-to-r from-red-600 to-blue-400 sticky top-0 bg-opacity-70 sm:max-w-full z-50">
   {/* Logo */}
   <a href='/' className='cursor-pointer' >
     <img src="/logo.svg" alt="Logo" className="w-[120px]" />
